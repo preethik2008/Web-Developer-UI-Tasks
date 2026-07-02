@@ -1,0 +1,112 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#F8F4EF;
+color:#4A3728;
+}
+
+.pricing{
+padding:80px 8%;
+text-align:center;
+}
+
+.pricing h1{
+font-size:45px;
+color:#5C4033;
+margin-bottom:15px;
+}
+
+.subtitle{
+font-size:18px;
+color:#7B5E57;
+margin-bottom:50px;
+}
+
+.pricing-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+position:relative;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.featured{
+border:3px solid #8B5E3C;
+}
+
+.badge{
+position:absolute;
+top:-15px;
+left:50%;
+transform:translateX(-50%);
+background:#8B5E3C;
+color:white;
+padding:8px 20px;
+border-radius:20px;
+font-size:14px;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#5C4033;
+}
+
+.card h3{
+font-size:40px;
+margin-bottom:25px;
+}
+
+.card h3 span{
+font-size:18px;
+}
+
+.card ul{
+list-style:none;
+margin-bottom:30px;
+}
+
+.card li{
+margin:15px 0;
+}
+
+button{
+padding:14px 30px;
+background:#5C4033;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#8B5E3C;
+}
+
+@media(max-width:768px){
+
+.pricing h1{
+font-size:35px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+}

@@ -1,0 +1,1 @@
+console.log("Pricing Table Loaded Successfully");
