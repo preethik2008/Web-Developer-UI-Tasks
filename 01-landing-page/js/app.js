@@ -1,1 +1,1 @@
-console.log("Landing Page Loaded Successfully");
+console.log("Responsive Landing Page Loaded Successfully");
