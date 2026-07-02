@@ -1,0 +1,1 @@
+console.log("Tablet Responsive Design Loaded Successfully");
