@@ -1,0 +1,1 @@
+console.log("Responsive Footer Loaded Successfully");
