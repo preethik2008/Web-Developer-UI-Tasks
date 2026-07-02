@@ -1,0 +1,89 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#F8F4EF;
+}
+
+header{
+background:#5C4033;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.container{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+padding:40px;
+}
+
+.billing,.summary{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.billing h2,.summary h2{
+margin-bottom:20px;
+color:#5C4033;
+}
+
+.billing input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.product{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+align-items:center;
+}
+
+.product img{
+width:80px;
+height:80px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.summary p,
+.summary h3{
+display:flex;
+justify-content:space-between;
+margin:15px 0;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#5C4033;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#7B563E;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+}
