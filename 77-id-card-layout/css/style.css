@@ -1,0 +1,98 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f3f3f3;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+}
+
+.id-card{
+width:360px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.top{
+background:#5C4033;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.logo{
+width:70px;
+height:70px;
+border:2px solid white;
+border-radius:50%;
+margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.top h2{
+margin-bottom:5px;
+}
+
+.photo{
+display:flex;
+justify-content:center;
+margin-top:25px;
+}
+
+.photo img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #5C4033;
+}
+
+.details{
+padding:25px;
+}
+
+.details h3{
+text-align:center;
+color:#5C4033;
+margin-bottom:20px;
+}
+
+.details p{
+margin:12px 0;
+color:#555;
+}
+
+.bottom{
+background:#5C4033;
+color:white;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+
+@media(max-width:400px){
+
+.id-card{
+width:100%;
+}
+
+.photo img{
+width:120px;
+height:120px;
+}
+
+}
