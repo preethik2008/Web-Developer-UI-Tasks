@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#e0e5ec;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+text-align:center;
+}
+
+.container h1{
+margin-bottom:40px;
+color:#5C4033;
+}
+
+.card{
+width:350px;
+padding:35px;
+border-radius:25px;
+background:#e0e5ec;
+box-shadow:
+8px 8px 16px #b8bec5,
+-8px -8px 16px #ffffff;
+}
+
+.card h2{
+color:#5C4033;
+margin-bottom:10px;
+}
+
+.card p{
+color:#666;
+margin-bottom:10px;
+}
+
+.card h3{
+margin-bottom:30px;
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.controls button{
+width:60px;
+height:60px;
+border:none;
+border-radius:50%;
+background:#e0e5ec;
+font-size:22px;
+cursor:pointer;
+box-shadow:
+6px 6px 12px #b8bec5,
+-6px -6px 12px #ffffff;
+transition:.2s;
+}
+
+.controls button:active{
+box-shadow:
+inset 6px 6px 12px #b8bec5,
+inset -6px -6px 12px #ffffff;
+}
+
+#play{
+background:#5C4033;
+color:white;
+}
+
+@media(max-width:500px){
+
+.card{
+width:90%;
+}
+
+}

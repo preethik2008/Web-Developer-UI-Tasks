@@ -1,0 +1,74 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+transition:0.3s;
+}
+
+body{
+background:#F7F3EF;
+color:#333;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:40px;
+width:90%;
+max-width:500px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+h1{
+color:#5C4033;
+margin-bottom:20px;
+}
+
+p{
+margin-bottom:30px;
+line-height:1.6;
+}
+
+button{
+background:#5C4033;
+color:white;
+border:none;
+padding:14px 28px;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#7A5A47;
+}
+
+/* Dark Mode */
+
+body.dark{
+background:#121212;
+color:white;
+}
+
+body.dark .container{
+background:#1F1F1F;
+}
+
+body.dark h1{
+color:#FFD580;
+}
+
+body.dark button{
+background:#FFD580;
+color:#121212;
+}
+
+body.dark button:hover{
+background:#FFC54D;
+}
