@@ -1,0 +1,1 @@
+console.log("Responsive Email Design Loaded Successfully");

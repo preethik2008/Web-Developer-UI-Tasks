@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<h2>🤖 Brown AI</h2>
+
+<ul>
+<li class="active">🏠 Dashboard</li>
+<li>💬 AI Chat</li>
+<li>📊 Analytics</li>
+<li>📁 Projects</li>
+<li>⚙️ Settings</li>
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+
+<h1>AI Dashboard</h1>
+
+<button id="refreshBtn">Refresh</button>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+<h3>AI Requests</h3>
+<h2 id="requests">1,248</h2>
+<p>Today's requests</p>
+</div>
+
+<div class="card">
+<h3>Accuracy</h3>
+<h2>98.7%</h2>
+<p>Model performance</p>
+</div>
+
+<div class="card">
+<h3>Active Users</h3>
+<h2>356</h2>
+<p>Currently online</p>
+</div>
+
+<div class="card">
+<h3>Tasks Completed</h3>
+<h2>892</h2>
+<p>This week</p>
+</div>
+
+</section>
+
+<section class="activity">
+
+<h2>Recent AI Activity</h2>
+
+<table>
+
+<tr>
+<th>Task</th>
+<th>Status</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>Text Generation</td>
+<td><span class="success">Completed</span></td>
+<td>2 min ago</td>
+</tr>
+
+<tr>
+<td>Image Analysis</td>
+<td><span class="running">Running</span></td>
+<td>5 min ago</td>
+</tr>
+
+<tr>
+<td>Voice Recognition</td>
+<td><span class="success">Completed</span></td>
+<td>10 min ago</td>
+</tr>
+
+<tr>
+<td>Data Prediction</td>
+<td><span class="pending">Pending</span></td>
+<td>20 min ago</td>
+</tr>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

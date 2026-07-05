@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IoT Dashboard UI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+<h2>🏡 Smart Home</h2>
+
+<ul>
+<li class="active">Dashboard</li>
+<li>Devices</li>
+<li>Sensors</li>
+<li>Energy</li>
+<li>Settings</li>
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header>
+<h1>IoT Dashboard</h1>
+<button id="refreshBtn">Refresh</button>
+</header>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌡️ Temperature</h3>
+<h2 id="temp">26°C</h2>
+</div>
+
+<div class="card">
+<h3>💧 Humidity</h3>
+<h2 id="humidity">58%</h2>
+</div>
+
+<div class="card">
+<h3>💡 Lights</h3>
+<label class="switch">
+<input type="checkbox" id="lightSwitch">
+<span class="slider"></span>
+</label>
+</div>
+
+<div class="card">
+<h3>🔒 Door</h3>
+<p id="doorStatus">Locked</p>
+<button id="doorBtn">Toggle</button>
+</div>
+
+</div>
+
+<section class="activity">
+
+<h2>Recent Device Activity</h2>
+
+<table>
+
+<tr>
+<th>Device</th>
+<th>Status</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>Living Room Light</td>
+<td>ON</td>
+<td>2 mins ago</td>
+</tr>
+
+<tr>
+<td>Main Door</td>
+<td>Locked</td>
+<td>5 mins ago</td>
+</tr>
+
+<tr>
+<td>Thermostat</td>
+<td>26°C</td>
+<td>10 mins ago</td>
+</tr>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
