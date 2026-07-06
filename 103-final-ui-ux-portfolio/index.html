@@ -43,15 +43,13 @@
 
 <header class="header">
 
-    <div class="logo">
-
+    <a href="#home" class="logo">
         CodeCraft
-
-    </div>
+    </a>
 
     <nav class="navbar">
 
-        <a href="#home">Home</a>
+        <a href="#home" class="active">Home</a>
 
         <a href="#about">About</a>
 
@@ -65,7 +63,7 @@
 
     <div class="header-buttons">
 
-        <button id="darkMode">
+        <button id="darkMode" aria-label="Toggle Dark Mode">
 
             <i class="fa-solid fa-moon"></i>
 
@@ -74,7 +72,6 @@
     </div>
 
 </header>
-
 <!-- ================= HERO ================= -->
 
 <section class="hero"
@@ -126,14 +123,14 @@
 
         <div class="hero-buttons">
 
-            <a href="#projects-grid"
+            <a href="#projects"
                class="btn">
 
                 View Projects
 
             </a>
 
-            <a href="../12-contact-form/index.html"
+            <a href="#contact"
                class="btn secondary">
 
                 Hire Me
@@ -174,9 +171,7 @@
 
     <div class="hero-right">
 
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b293f?w=700"
-             alt="Developer">
-
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700" alt="Developer">
     </div>
 
 </section>
@@ -225,19 +220,15 @@
 
             <div class="about-buttons">
 
-                <a href="#project-grid"" class="btn">
+<a href="#projects" class="btn">
+My Projects
+</a>
 
-                    My Projects
+<a href="#contact" class="btn secondary">
+Contact Me
+</a>
 
-                </a>
-
-<a href="../12-contact-form/index.html" class="project-btn">View Project</a>
-
-                    Contact Me
-
-                </a>
-
-            </div>
+</div>
 
         </div>
 
@@ -247,8 +238,7 @@
 
 <!-- ================= STATISTICS ================= -->
 
-<section class="stats">
-
+<section class="stats" id="stats">
     <div class="stat-card">
 
         <h2>102+</h2>
@@ -362,7 +352,16 @@
 </section>
 
 <!-- ================= PROJECTS START HERE (PART 2A) ================= -->
- <div class="project-grid">
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="projects">
+
+<div class="section-title">
+    <h2>My Projects</h2>
+    <p>Explore all 102 projects.</p>
+</div>
+
+<div class="project-grid">
 
 <div class="project-card">
 <h3>01. Landing Page</h3>
@@ -874,3 +873,46 @@
 </div>
 
 </section>
+</div>
+</section>
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Contact Me</h2>
+<p>Let's build something amazing together.</p>
+</div>
+
+<form id="contactForm">
+
+<div class="row">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email" required>
+</div>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+<footer>
+
+<p>
+© <span id="year"></span> Preethi.
+All Rights Reserved.
+</p>
+
+</footer>
+
+<button id="scrollTop">
+↑
+</button>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+/*==================================
+        GOOGLE FONT
+==================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==================================
+        RESET
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --primary:#4e342e;
+    --secondary:#795548;
+    --accent:#d7b899;
+    --light:#f8f5f0;
+    --white:#ffffff;
+    --shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+body{
+
+    background:var(--light);
+
+    color:var(--primary);
+
+    line-height:1.7;
+
+}
+
+/*==================================
+        HEADER
+==================================*/
+
+header{
+
+    background:linear-gradient(135deg,#3e2723,#6d4c41);
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+header h1{
+
+    font-size:48px;
+
+    margin-bottom:12px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+/*==================================
+        HERO
+==================================*/
+
+.hero{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.left h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+}
+
+.left p{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+.right img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*==================================
+        BUTTON
+==================================*/
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 36px;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:var(--accent);
+
+    color:#222;
+
+}
+
+/*==================================
+        PROJECTS
+==================================*/
+
+.projects{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+}
+
+.projects h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:45px;
+
+    color:var(--primary);
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:48px;
+
+    color:var(--accent);
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+/*==================================
+        FOOTER
+==================================*/
+
+footer{
+
+    margin-top:80px;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+/*==================================
+        ANIMATION
+==================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/*==================================
+        SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#efe6dc;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--secondary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary);
+
+}
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:32px;
+
+    }
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .left h2{
+
+        font-size:32px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
